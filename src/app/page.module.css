@@ -3,6 +3,7 @@
 
 
 .main {
+  color: white;
   margin: 0 auto;
   max-width: 1700px;
   font-family: "Poppins", sans-serif;
@@ -12,7 +13,6 @@
   align-items: center;
   align-items: center;
   position: relative;
-  background-color: black;
 }
 @media screen and (max-width: 1700px) {
 .main {
