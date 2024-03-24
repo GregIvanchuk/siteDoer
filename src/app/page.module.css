@@ -12,6 +12,7 @@
   align-items: center;
   align-items: center;
   position: relative;
+  background-color: black;
 }
 @media screen and (max-width: 1700px) {
 .main {

@@ -258,8 +258,6 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
                   </div>
 </div>
 
-
-
 <div className={styles.serviceItem}>
  <h3 className={styles.serviceTitle}>News Websites</h3>
  <div className={styles.servicePrices}>
