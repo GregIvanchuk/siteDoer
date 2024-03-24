@@ -290,7 +290,7 @@ To learn more about my projects and skills, I invite you to explore my portfolio
 
 <div className={styles.flex}>
                   <a className={styles.loadPort} href="https://morpho.jewelry">View resume</a>
-                  <Image  width={25} height={25} alt='im1' src="/arrow2.png" />
+                  <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 <div id="contact" className={styles.section6}>
