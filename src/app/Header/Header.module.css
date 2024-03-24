@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rasa:ital,wght@0,500;1,500&family=Ysabeau+SC:wght@1..1000&display=swap');
+.logo{
+    outline: none;
+    box-shadow: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    word-wrap:break-word;
+  }
+  .lang{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  }
+  .lang:hover{
+    cursor: pointer;
+    color: rgb(170, 170, 170);
+  }
+  .link{
+    outline: none;
+    box-shadow: none;
+  }
+  .header{
+    z-index: 12;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    left: 0em;
+    top: 0em;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /* background: linear-gradient(rgb(0, 0, 18),rgba(14, 0, 67, 0.877)); */
+    background: rgba(0, 95, 203, 0);
+    width: 100%;
+    /* border: 0.1rem rgb(47, 0, 78) solid; */
+    /* border-bottom: 1px white solid; */
+  }
+  .menuList{
+    width:1400px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  .menuItem{
+    outline: none;
+    box-shadow: none;
+    text-align: center;
+    list-style: none;
+    font-size: 1.2rem;
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    /* border-radius: 1em; */
+    color: rgb(255, 255, 255);
+    outline: none;
+  
+    /* Додаємо анімацію для обведення лінією */
+    transition: border-color 0.3s ease-in-out;
+  }
+  .menuActive{
+    outline: none;
+    box-shadow: none;
+    text-align: center;
+    list-style: none;
+    font-size: 1.2rem;
+    background: linear-gradient(rgb(47, 0, 78), black);
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    color: rgb(167, 167, 167);
+  }
+  .menuItem:hover {
+    outline: none;
+    box-shadow: none;
+    background: linear-gradient(rgb(47, 0, 78), black);
+    border: none;
+}
+  .burger{
+    cursor: pointer;
+    display: none;
+    position:relative;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+    z-index: 50;
+  }
+  .burger span {
+    outline: none;
+    box-shadow: none;
+    height: 2px;
+    width: 60%;
+    transform: scale(1);
+    background-color: #4c0093;
+  }
+  .burger:before, .burger:after{
+    outline: none;
+    box-shadow: none;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #45006a;
+    transition: all 0.3s ease 0s; 
+  }
+  .burger:before{
+    outline: none;
+    box-shadow: none;
+    top: 0;
+  }
+  .burger:after{
+    outline: none;
+    box-shadow: none;
+    bottom: 0;
+  }
+  .burger.active span {
+    outline: none;
+    box-shadow: none;
+    transform: scale(0);
+  }
+   .burger.active:before {
+    outline: none;
+    box-shadow: none;
+    top: 50%;
+    transform: rotate(-45deg) translate(0,-50%);
+   }
+   .burger.active:after {
+    outline: none;
+    box-shadow: none;
+    bottom: 50%;
+    transform: rotate(45deg) translate(0,50%);
+   }
+  /* @media(max-width:1150px){ */
+    .header{
+      height: 10vh;
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: calc(100px + 1vw);
+    }
+    .burger {
+      /* margin-right: -200px; */
+      display: flex;
+   }
+   .store_title {
+    margin-left: -250px;
+  
+   }
+   .menu {
+    display: none;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    border: 0.1rem rgb(47, 0, 78) solid;
+    height: 100vh;
+    width: 30%;
+    z-index: 50;
+    overflow: hidden;
+    padding: 5em 5em;
+    background: black;
+    animation: burgerAnimation 0.5s;
+  }
+
+  @media(max-width:1000px){
+    .menu {
+      width: 100%;
+    }
+  }
+  .menu ul {
+    margin: 0 auto;
+    text-align: left;
+    display: content;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+  .menu ul li {
+    text-align: left;
+   font-size: 1.5em;
+  }
+  .menu ul li div span {
+    font-size: 23px;
+  }
+  .menu ul li a:hover {
+   color: rgb(67, 65, 65);
+  }
+  .menu.active {
+  display: flex;
+  }
+  .menu select {
+  width:120px;
+  height: 30px;
+  color:white; 
+  font-size: 19px;
+  background-color: black;
+  border:none;
+  }
+  /* } */
+  @keyframes burgerAnimation {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @media(max-width:600px){
+    .header{
+      height: 7vh;
+    }
+    .logo{
+      font-size: 1.2rem;
+      white-space: nowrap;
+    }
+    .burger{
+      height: 15px;
+      width: 25px;
+    }
+
+  }

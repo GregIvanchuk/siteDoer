@@ -1,0 +1,388 @@
+.wrapper{
+    background-color: #000000;
+    max-width:1;
+    height: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:1600px){
+    .wrapper{
+      width: 100%;
+    }
+  }
+.content{
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.map{
+    width: 100%;
+    height: 350px;
+}
+.button{
+    font-size: 1.1rem;
+    margin-top: 2em;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    width: 100%;
+    height: 3.4em;
+    outline: none; 
+    box-shadow: none;
+    background-color: white;
+    border: none;
+}
+.button:hover{
+    outline: none;
+    box-shadow: none;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+   
+/* @media(max-width:1130px){
+    .content{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+       
+    }
+} */
+/* @media(max-width:1000px){
+    .content{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    
+} */
+.contWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(96, 96, 96);
+}
+.linkSocial img {
+    filter: brightness(0) 
+}
+.contWrapper a:hover{
+    color: blue;
+}
+.greyBlock{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 550px;
+}
+.h1{
+    font-size: 3em;
+    text-align: left;
+    color: rgb(255, 255, 255);
+   
+}
+.p{
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 115px;
+}
+.contact{
+    display: flex;
+    flex-direction: column
+}
+
+.form {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom:100px;
+}
+.textarea{
+    width: 750px;
+    height:100px;
+    color:rgb(255, 255, 255);
+    font-size:17px;
+    background-color:black;
+    border: none;
+    border-bottom: 1px rgb(47, 0, 78) solid;
+    /* padding-left: 5px; */
+
+}
+.item input {
+    width: 750px;
+    height:50px;
+    color:rgb(255, 255, 255);
+    font-size:17px;
+    background-color: black;
+    border: none;
+    border-bottom: 1px rgb(47, 0, 78) solid;
+    /* padding-left: 5px; */
+}
+.item input::placeholder, .textarea::placeholder{
+    font-size: 1.2rem;
+    color: rgb(166, 166, 166);
+}
+.item{
+    display:flex;
+    flex-direction:column;
+    /* margin-left:20px;
+    margin-right:20px; */
+}
+.item label{
+    color:rgb(255, 255, 255);
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.5rem;
+}
+.item label span{
+    color: grey;
+    font-size: 1.5rem;
+}
+
+/* @media(max-width:1245px){
+    .content{
+        width: 1100px;
+        gap: 0em;
+    }
+} */
+@media(max-width:1400px){
+    .form {
+        width: 620px;
+    }
+    .textarea{
+        width: 620px;
+    
+    }
+    .item input {
+        width: 620px;
+       
+    }
+}
+
+
+
+
+@media(max-width:1270px){
+    .form {
+        width: 520px;
+    }
+    .textarea{
+        width: 520px;
+    
+    }
+    .item input {
+        width: 520px;
+       
+    }
+}
+@media(max-width:1150px){
+    .content{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .wrapper{
+        height: 100%;
+    }
+    .content_top{
+        padding-bottom: 3em;
+       
+    }
+}
+/* @media(max-width:11600px){
+    .form {
+        width: 420px;
+    }
+    .textarea{
+        width: 420px;
+    
+    }
+    .item input {
+        width: 420px;
+       
+    }
+} */
+@media(max-width:1150px){
+    .form {
+        width: 400px;
+    }
+    .textarea{
+        width: 400px;
+    
+    }
+    .item input {
+        width: 400px;
+       
+    }
+}
+@media(max-width:1050px){
+    .form {
+        width: 720px;
+    }
+    .textarea{
+        width: 720px;
+    
+    }
+    .item input {
+        width: 720px;
+       
+    }
+}
+@media(max-width:800px){
+    .form {
+        width: 620px;
+    }
+    .textarea{
+        width: 620px;
+    
+    }
+    .item input {
+        width: 620px;
+       
+    }
+}
+@media(max-width:700px){
+    .form {
+        width: 520px;
+    }
+    .textarea{
+        width: 520px;
+    
+    }
+    .item input {
+        width: 520px;
+       
+    }
+}
+@media(max-width:600px){
+    .form {
+        width: 420px;
+    }
+    .textarea{
+        
+        width: 420px;
+    
+    }
+    .item input {
+        width: 420px;
+       
+    }
+    .button{
+        height: 3em;
+    }
+}
+@media(max-width:500px){
+    .form {
+        width: 320px;
+    }
+    .textarea{
+        width: 320px;
+    
+    }
+    .item input {
+        width: 520px;
+       
+    }
+}
+
+
+@media(max-width:1000px){
+    .wrapper{
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+}
+@media(max-width:700px){
+    .content{
+        padding: 2em;
+    }
+}
+@media(max-width:570px){
+    .form ,  .textarea , .item input{
+        width: 350px;
+    }
+    .item label{
+        font-size: 1.3rem;
+    }
+    .item label span{
+        font-size: 1.3rem;
+    }
+
+}
+@media(max-width:420px){
+    .form ,  .textarea , .item input{
+        width: 320px;
+    }
+}
+@media(max-width:385px){
+    .form ,  .textarea , .item input{
+        width: 280px;
+    }
+}
+.loaderContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerColum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerColumInner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+.logoTitle{
+    color: red;
+    font-size: 2rem;
+    padding-bottom: 1em;
+}
+.footerDescr{
+    color: grey;
+    font-size: 1.2rem;
+}
+.ItemFooter{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgb(25, 25, 25);
+}
+.ItemFooterTitle{
+    font-size: 1.3rem;
+    color: white;
+}
+.titleColums{
+    position: relative;
+    font-size: 1.8rem;
+    padding-bottom: 0.5em;
+}
+
+.ItemFooterDescr{
+    padding-top: 0.5em;
+    font-size: 1.3rem;
+    color: rgb(82, 80, 80);
+}
+
