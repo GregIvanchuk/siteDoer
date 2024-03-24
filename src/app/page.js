@@ -227,7 +227,7 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
  <p  className={styles.serviceDescr}>up to 5 pages</p>
  <div className={styles.flex}>
                   <Link className={styles.loadPort} href="#contact">buy</Link>
-                  <Image  width={25} height={25} alt='im1' src="/arrow2.png" />
+                  <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 
@@ -240,7 +240,7 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
  <p  className={styles.serviceDescr}>up to 10 sections</p>
  <div className={styles.flex}>
                   <Link className={styles.loadPort} href="#contact">buy</Link>
-                  <Image  width={25} height={25} alt='im1' src="/arrow2.png" />
+                  <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 </div>
@@ -254,7 +254,7 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
  <p  className={styles.serviceDescr}>basket, filters, payment, admin panel</p>
  <div className={styles.flex}>
                   <Link className={styles.loadPort} href="#contact">buy</Link>
-                  <Image  width={25} height={25} alt='im1' src="/arrow2.png" />
+                  <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 
@@ -267,7 +267,7 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
  <p  className={styles.serviceDescr}>admin panel</p>
  <div className={styles.flex}>
                   <Link className={styles.loadPort} href="#contact">buy</Link>
-                  <Image  width={25} height={25} alt='im1' src="/arrow2.png" />
+                  <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 </div>

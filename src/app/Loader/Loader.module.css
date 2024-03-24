@@ -29,7 +29,7 @@
     -o-transform:rotate(180deg);
     -moz-transform:rotate(180deg);
     -webkit-transform:rotate(180deg); */
-    color:rgb(47, 0, 78);
+    color:#4c219e ;
   }
   @media screen and (max-width: 650px) {
     .load {

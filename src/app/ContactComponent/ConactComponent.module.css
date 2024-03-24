@@ -1,10 +1,10 @@
 .wrapper{
     background-color: #000000;
-    max-width:1;
-    height: 100;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 @media(max-width:1600px){
     .wrapper{
@@ -13,12 +13,13 @@
   }
 .content{
     /* height: 100%; */
-    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
     background-color: #000000;
+    padding: 0;
+    margin: 0;
 }
 
 .map{
@@ -118,7 +119,7 @@
     font-size:17px;
     background-color:black;
     border: none;
-    border-bottom: 1px rgb(47, 0, 78) solid;
+    border-bottom: 1px #4c219e solid;
     /* padding-left: 5px; */
 
 }
@@ -129,7 +130,7 @@
     font-size:17px;
     background-color: black;
     border: none;
-    border-bottom: 1px rgb(47, 0, 78) solid;
+    border-bottom: 1px #4c219e solid;
     /* padding-left: 5px; */
 }
 .item input::placeholder, .textarea::placeholder{
@@ -195,7 +196,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
         
     }
     .wrapper{
@@ -316,7 +316,7 @@
 }
 @media(max-width:570px){
     .form ,  .textarea , .item input{
-        width: 350px;
+        width: 300px;
     }
     .item label{
         font-size: 1.3rem;
@@ -328,12 +328,12 @@
 }
 @media(max-width:420px){
     .form ,  .textarea , .item input{
-        width: 320px;
+        width: 280px;
     }
 }
 @media(max-width:385px){
     .form ,  .textarea , .item input{
-        width: 280px;
+        width: 250px;
     }
 }
 .loaderContainer{

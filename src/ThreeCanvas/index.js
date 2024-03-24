@@ -32,7 +32,7 @@ const ThreeCanvas = () => {
     const geometry = new THREE.SphereGeometry(30, 20, 20);
     const wireframe = new THREE.WireframeGeometry(geometry);
 
-    const material = new THREE.LineBasicMaterial({ color: new THREE.Color(0.184, 0, 0.306) });
+    const material = new THREE.LineBasicMaterial({ color: 0x4c219e });
     sphere.current = new THREE.LineSegments(wireframe, material);
     scene.current.add(sphere.current);
 

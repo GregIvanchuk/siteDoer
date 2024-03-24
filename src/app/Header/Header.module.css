@@ -64,7 +64,7 @@
     text-align: center;
     list-style: none;
     font-size: 1.2rem;
-    background: linear-gradient(rgb(47, 0, 78), black);
+    background: linear-gradient(#4c219e , black);
     padding-top: 0.2em;
     padding-bottom: 0.3em;
     padding-left: 0.7em;
@@ -74,7 +74,7 @@
   .menuItem:hover {
     outline: none;
     box-shadow: none;
-    background: linear-gradient(rgb(47, 0, 78), black);
+    background: linear-gradient(#4c219e , black);
     border: none;
 }
   .burger{
@@ -93,7 +93,7 @@
     height: 2px;
     width: 60%;
     transform: scale(1);
-    background-color: #4c0093;
+    background-color:#4c219e ;
   }
   .burger:before, .burger:after{
     outline: none;
@@ -102,7 +102,7 @@
     position: absolute;
     height: 2px;
     width: 100%;
-    background-color: #45006a;
+    background-color: #4c219e ;
     transition: all 0.3s ease 0s; 
   }
   .burger:before{
@@ -155,7 +155,7 @@
     align-items: start;
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
-    border: 0.1rem rgb(47, 0, 78) solid;
+    border: 0.1rem #4c219e  solid;
     height: 100vh;
     width: 30%;
     z-index: 50;
