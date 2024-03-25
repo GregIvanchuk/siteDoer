@@ -30,6 +30,7 @@
 }
 
 .center {
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,6 +112,8 @@
   justify-content: center;
 }
 .logo{
+  position: absolute;
+  z-index: 2;
   font-size: 6rem;
 }
 .center::before {

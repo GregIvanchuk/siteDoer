@@ -7,13 +7,14 @@ import Loader from './Loader';
 import ContactComponent from './ContactComponent';
 import ThreeCanvas from '@/ThreeCanvas';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const simulateDataLoading = () => {
     setTimeout(() => {
       setIsLoading(false); // Після завантаження даних приховати лоадер
-    }, 3000); // Час затримки у мілісекундах
+    }, 2000); // Час затримки у мілісекундах
   };
 
   // Викликаємо функцію для симуляції завантаження при першому рендері
@@ -28,9 +29,16 @@ export default function Home() {
       ) : (
     <main className={styles.main}>
       <Header/>
-      <div className={styles.center}>
-     <h1 className={styles.logo} > siteDoer.pro</h1>
-      </div>
+      <motion.div
+      initial={{ opacity: 0, scale: 0 }} // Початкові стилі для зменшення та зникнення
+      animate={{ opacity: 1, scale: 1 }} // Анімаційні стилі для появи та збільшення
+      transition={{ duration: 0.5 }} // Параметри анімації
+      className={styles.center}
+    >
+      <h1 className={styles.logo}>
+        siteDoer.pro
+      </h1>
+    </motion.div>
       <div className={styles.section1}>
 
       <h2 className={styles.title} >Welcome to siteDoer.pro!</h2>
