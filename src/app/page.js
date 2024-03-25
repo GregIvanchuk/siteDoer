@@ -297,13 +297,20 @@ What excites me most about being a web developer is the ability to transform ide
 To learn more about my projects and skills, I invite you to explore my portfolio and resume. Thank you for your attention, and I look forward to opportunities for collaboration and growth in the field of web development.</p>
 
 <div className={styles.flex}>
-                  <a className={styles.loadPort} href="https://morpho.jewelry">View resume</a>
+<a className={styles.loadPort} href="/CV_IG.pdf" download>Download resume</a>
                   <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 <div id="contact" className={styles.section6}>
   <ContactComponent/>
   <ThreeCanvas/>
+  </div>
+  <div className={styles.section7}>
+
+<a className={styles.footerItem} href="https://www.instagram.com/overthinker__2.0?igsh=MW1rdG9rN3dvNzVqMw==" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a className={styles.footerItem} href="tel:+380968336006">+380 96 83 36 006</a>
+<a className={styles.footerItem} href="mailto:gregiv99@gmail.com">Email</a>
+
   </div>
     </main>
        )}

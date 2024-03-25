@@ -63,6 +63,23 @@
 .section3{
   border-bottom: none;
 }
+.section7{
+  border-top: 0.1rem #4c219e solid;
+  border-bottom: 0.1rem #4c219e solid;
+  padding:2em;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  
+}
+.footerItem{
+  font-size: 1rem;
+  color: rgb(158, 158, 158);
+}
 @media screen and (max-width: 800px) {
   .section1, .section2,.section3, .section5 {
     padding-left:2em;
@@ -90,15 +107,14 @@
 }
 @media screen and (max-width: 1050px) {
   .section6 {
-    padding:5em;
-    padding-left: 2em;
-    padding-right: 2em;
-    font-size: 1.3rem;
-    display: flex;
     flex-direction: column-reverse;
-    gap: 5em;
-    align-items: center;
-    justify-content: center;
+    gap: 4em;
+    padding-bottom: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section6 {
+    padding-bottom: 0em;
   }
 }
 .section4{
