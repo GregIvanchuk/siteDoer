@@ -74,11 +74,21 @@
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  flex-wrap: wrap;
   
 }
 .footerItem{
   font-size: 1rem;
   color: rgb(158, 158, 158);
+}
+@media screen and (max-width: 420px) {
+  .footerItem{
+    font-size: 0.9rem;
+  }
+  .section7{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 @media screen and (max-width: 800px) {
   .section1, .section2,.section3, .section5 {
