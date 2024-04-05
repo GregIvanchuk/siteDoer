@@ -84,7 +84,7 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
         </thead>
         <tbody>
             <tr>
-                <td className={styles.year} >2021</td>
+                <td className={styles.year} >2023</td>
                 <td className={styles.tdTitle}>Inkd by Mary Ann</td>
                 <td  className={styles.country}>USA</td>
                 <td className={styles.stek}>
@@ -94,8 +94,8 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
                   </td>
                 <td className={styles.tDlink} >
                   <div className={styles.flex}>
-                   <a className={styles.link} href="https://www.example.com">
-                   <span className={styles.linkSpan}>https://www.example.com</span>
+                   <a className={styles.link} href="https://inkd-zk4e.vercel.app">
+                   <span className={styles.linkSpan}>https://inkd.app/</span>
                    <Image  width={25} height={25} alt='im1' src="/arr.png" />
                    </a>
                
@@ -103,6 +103,25 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
 
                 </td>
                 </tr>
+                <tr>
+                <td className={styles.year}>2024</td>
+                <td className={styles.tdTitle}>Vapno Group</td>
+                <td className={styles.country}>Ukraine</td>
+                <td className={styles.stek}>
+                  <span>
+                  Next.js
+                  </span>
+                  </td>
+                  <td className={styles.tDlink}> 
+                  <div className={styles.flex}>
+                  <a className={styles.link} href="https://vapno.group">
+                    <span className={styles.linkSpan}>https://vapno.group</span>
+                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
+                  </a>
+                  </div>
+                  </td>
+            </tr>
+
             <tr>
                 <td className={styles.year} >2023</td>
                 <td className={styles.tdTitle}>Schlüsselfertiges Haus</td>
@@ -126,8 +145,8 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
 
             <tr>
                 <td className={styles.year}>2024</td>
-                <td className={styles.tdTitle}>Piacere Pizza</td>
-                <td  className={styles.country}>Germany</td>
+                <td className={styles.tdTitle}>siteDoer.pro</td>
+                <td  className={styles.country}>Ukraine</td>
                 <td className={styles.stek}>
                   <span>
                  React
@@ -135,8 +154,8 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
                   </td>
                   <td className={styles.tDlink}>
                   <div className={styles.flex}>
-                    <a className={styles.link} href="https://example.app">
-                    <span className={styles.linkSpan}>https://www.pp.com</span>
+                    <a className={styles.link} href="https://site-doer.vercel.app">
+                    <span className={styles.linkSpan}>https://sitedoer.pro</span>
                     <Image  width={25} height={25} alt='im1' src="/arr.png" />
                     </a>
                  
@@ -201,24 +220,7 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
                   </td>
             </tr>
 
-            <tr>
-                <td className={styles.year}>2024</td>
-                <td className={styles.tdTitle}>Vapno Group</td>
-                <td className={styles.country}>Ukraine</td>
-                <td className={styles.stek}>
-                  <span>
-                  Next.js
-                  </span>
-                  </td>
-                  <td className={styles.tDlink}> 
-                  <div className={styles.flex}>
-                  <a className={styles.link} href="https://vapno.group">
-                    <span className={styles.linkSpan}>https://vapno.group</span>
-                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
-                  </a>
-                  </div>
-                  </td>
-            </tr>
+          
         </tbody>
     </table>
 </div>
@@ -229,8 +231,8 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
 <div className={styles.serviceItem}>
  <h3 className={styles.serviceTitle}>Corporate Websites</h3>
  <div className={styles.servicePrices}>
- <p  className={styles.servicePrice}>from 150$</p>
- <p  className={styles.oldPrice}>from 250$</p>
+ <p  className={styles.servicePrice}>from 200$</p>
+ <p  className={styles.oldPrice}>from 300$</p>
  </div>
  <p  className={styles.serviceDescr}>up to 5 pages</p>
  <div className={styles.flex}>
@@ -242,7 +244,7 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
 <div className={styles.serviceItem}>
  <h3 className={styles.serviceTitle}>Landing Page</h3>
  <div className={styles.servicePrices}>
- <p  className={styles.servicePrice}>from 100$</p>
+ <p  className={styles.servicePrice}>from 150$</p>
  <p  className={styles.oldPrice}>from 200$</p>
  </div>
  <p  className={styles.serviceDescr}>up to 10 sections</p>
@@ -256,8 +258,8 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
 <div className={styles.serviceItem}>
  <h3 className={styles.serviceTitle}>E-commerce Websites</h3>
  <div className={styles.servicePrices}>
- <p  className={styles.servicePrice}>from 200$</p>
- <p  className={styles.oldPrice}>from 350$</p>
+ <p  className={styles.servicePrice}>from 300$</p>
+ <p  className={styles.oldPrice}>from 500$</p>
  </div>
  <p  className={styles.serviceDescr}>basket, filters, payment, admin panel</p>
  <div className={styles.flex}>
@@ -269,8 +271,8 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
 <div className={styles.serviceItem}>
  <h3 className={styles.serviceTitle}>News Websites</h3>
  <div className={styles.servicePrices}>
- <p  className={styles.servicePrice}>from 250$</p>
- <p  className={styles.oldPrice}>from 350$</p>
+ <p  className={styles.servicePrice}>from 350$</p>
+ <p  className={styles.oldPrice}>from 550$</p>
  </div>
  <p  className={styles.serviceDescr}>admin panel</p>
  <div className={styles.flex}>
