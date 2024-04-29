@@ -1,16 +1,22 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image'
-import styles from './page.module.css'
-import Header from './Header'
-import Loader from './Loader';
-import ContactComponent from './ContactComponent';
-import ThreeCanvas from '@/ThreeCanvas';
+import styles from './All.module.css'
+import Header from '../Header'
+import Loader from '../Loader';
+import ContactComponent from '../ContactComponent';
+import ThreeCanvas from '@/app/[locale]/ThreeCanvas';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-export default function Home() {
+export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,project,technology,link,
+    titleItem1, priceNewItem1, priceOldItem1, descrItem1,
+    titleItem2, priceNewItem2, priceOldItem2, descrItem2,
+    titleItem3, priceNewItem3, priceOldItem3, descrItem3,
+    titleItem4, priceNewItem4, priceOldItem4, descrItem4,buttonBuy,title3, p8, p9, p10, p11, p12,buttonDownload,title4, name, email, phone, message,buttonSubmit,home, projects, contact, prices, about}) {
   const [isLoading, setIsLoading] = useState(true);
+
+
   const simulateDataLoading = () => {
     setTimeout(() => {
       setIsLoading(false); // Після завантаження даних приховати лоадер
@@ -28,7 +34,14 @@ export default function Home() {
         <Loader/>
       ) : (
     <main className={styles.main}>
-      <Header/>
+      <Header home={home} projects={projects} contact={contact} prices={prices} about
+
+
+
+
+
+
+/>
       <motion.div
       initial={{ opacity: 0, scale: 0 }} // Початкові стилі для зменшення та зникнення
       animate={{ opacity: 1, scale: 1 }} // Анімаційні стилі для появи та збільшення
@@ -41,29 +54,29 @@ export default function Home() {
     </motion.div>
       <div className={styles.section1}>
 
-      <h2 className={styles.title} >Welcome to siteDoer.pro!</h2>
+      <h2 className={styles.title} >{title}</h2>
 
-      <p className={styles.p1}> We are a professional web development studio offering a full range of services for creating, designing, and maintaining web projects of any complexity. Our team consists of experienced professionals with a creative approach to each task.</p>
+      <p className={styles.p1}>{p1}</p>
 
-      <p className={styles.p2}>In a world where the visual appearance and functionality of a website determine the success of your business or project, we offer an individual approach to each client. Whether you need to create a new website from scratch, redesign an existing one, or maintain and optimize an existing resource, we are ready to bring your ideas to life.</p>
+      <p className={styles.p2}>{p2}</p>
 
-      <p className={styles.p3}>Our services cover all aspects of web development, including web design, programming, mobile device adaptation, SEO optimization, security testing, and much more. We use modern technologies and best market practices to provide you with a high-quality product that meets all modern standards.</p>
+      <p className={styles.p3}>{p3}</p>
 
-      <p className={styles.p4}>Join our studio and let us make your web project visible and effective!</p>
+      <p className={styles.p4}>{p4}</p>
       </div>
       <div className={styles.section2}>
       <Image className={styles.im} width={450} height={450} alt='im1' src="/im1.jpg" />
        <div className={styles.text}>
        <h3 className={styles.titleH3}>
-Our studio uses cutting-edge technologies to build websites and web applications, primarily employing:</h3> 
+{title2}</h3> 
 <ul className={styles.list}
 >
   <li className={styles.listItem}>
-React: React is one of the most popular JavaScript libraries for developing user interfaces. It enables us to create dynamic and efficient web pages that respond to user actions without page reloads.</li>
+{p5}</li>
 <li className={styles.listItem}>
-Next.js: Next.js is a popular React framework for building universal (with server-side rendering) web applications. It provides the capability to build high-performing and SEO-optimized applications, along with straightforward routing management and static page generation.</li>
+{p6}</li>
 <li className={styles.listItem}>
-MongoDB: MongoDB is a document-oriented NoSQL database used for storing and managing data. It allows us to efficiently store and process structured and unstructured data for our web projects.</li>
+{p7}</li>
 </ul>
        </div>
     
@@ -75,11 +88,11 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
 <table className={styles.myTable}>
         <thead>
             <tr>
-                <th >Year</th>
-                <th>Project</th>
-                <th className={styles.countryDescr}>Country </th>
-                <th className={styles.built}>Built with</th>
-                <th>Link</th>
+                <th className={styles.yearDescr} >{year}</th>
+                <th>{project}</th>
+                <th className={styles.countryDescr}>{country}</th>
+                <th className={styles.built}>{technology}</th>
+                <th>{link}</th>
             </tr>
         </thead>
         <tbody>
@@ -229,54 +242,53 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
 <div className={styles.services}>
 <div className={styles.serviceItemTop}>
 <div className={styles.serviceItem}>
- <h3 className={styles.serviceTitle}>Corporate Websites</h3>
+ <h3 className={styles.serviceTitle}>{titleItem1}</h3>
  <div className={styles.servicePrices}>
- <p  className={styles.servicePrice}>from 200$</p>
- <p  className={styles.oldPrice}>from 300$</p>
+ <p  className={styles.servicePrice}>{priceNewItem1}</p>
+ <p  className={styles.oldPrice}>{priceOldItem1}</p>
  </div>
- <p  className={styles.serviceDescr}>up to 5 pages</p>
+ <p  className={styles.serviceDescr}>{descrItem1}</p>
  <div className={styles.flex}>
-                  <Link className={styles.loadPort} href="#contact">buy</Link>
+                  <Link className={styles.loadPort} href="#contact">{buttonBuy}</Link>
                   <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
-
 <div className={styles.serviceItem}>
- <h3 className={styles.serviceTitle}>Landing Page</h3>
+ <h3 className={styles.serviceTitle}>{titleItem2}</h3>
  <div className={styles.servicePrices}>
- <p  className={styles.servicePrice}>from 150$</p>
- <p  className={styles.oldPrice}>from 200$</p>
+ <p  className={styles.servicePrice}>{priceNewItem2}</p>
+ <p  className={styles.oldPrice}>{priceOldItem2}</p>
  </div>
- <p  className={styles.serviceDescr}>up to 10 sections</p>
+ <p  className={styles.serviceDescr}>{descrItem2}</p>
  <div className={styles.flex}>
-                  <Link className={styles.loadPort} href="#contact">buy</Link>
+                  <Link className={styles.loadPort} href="#contact">{buttonBuy}</Link>
                   <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 </div>
 <div className={styles.serviceItemBottom}>
 <div className={styles.serviceItem}>
- <h3 className={styles.serviceTitle}>E-commerce Websites</h3>
+ <h3 className={styles.serviceTitle}>{titleItem3}</h3>
  <div className={styles.servicePrices}>
- <p  className={styles.servicePrice}>from 300$</p>
- <p  className={styles.oldPrice}>from 500$</p>
+ <p  className={styles.servicePrice}>{priceNewItem3}</p>
+ <p  className={styles.oldPrice}>{priceOldItem3}</p>
  </div>
- <p  className={styles.serviceDescr}>basket, filters, payment, admin panel</p>
+ <p  className={styles.serviceDescr}>{descrItem3}</p>
  <div className={styles.flex}>
-                  <Link className={styles.loadPort} href="#contact">buy</Link>
+                  <Link className={styles.loadPort} href="#contact">{buttonBuy}</Link>
                   <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 
 <div className={styles.serviceItem}>
- <h3 className={styles.serviceTitle}>News Websites</h3>
+ <h3 className={styles.serviceTitle}>{titleItem4}</h3>
  <div className={styles.servicePrices}>
- <p  className={styles.servicePrice}>from 350$</p>
- <p  className={styles.oldPrice}>from 550$</p>
+ <p  className={styles.servicePrice}>{priceNewItem4}</p>
+ <p  className={styles.oldPrice}>{priceOldItem4}</p>
  </div>
- <p  className={styles.serviceDescr}>admin panel</p>
+ <p  className={styles.serviceDescr}>{descrItem4}</p>
  <div className={styles.flex}>
-                  <Link className={styles.loadPort} href="#contact">buy</Link>
+                  <Link className={styles.loadPort} href="#contact">{buttonBuy}</Link>
                   <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
@@ -285,26 +297,25 @@ MongoDB: MongoDB is a document-oriented NoSQL database used for storing and mana
 </div>
 </div>
 <div  id="about" className={styles.section5}>
-<h2 className={styles.title} >About Us</h2>
+<h2 className={styles.title} >{title3}</h2>
 
-<p className={styles.p1}> 
-Мy journey began with a quest for a world where technology and creativity intersect, and where every line of code can create a new visual and functional reality. My name is Gregory, and I am a web developer.</p>
+<p className={styles.p1}>{p8}</p>
 <p className={styles.p1}>
-From a young age, I was fascinated by computers and their capabilities. When I first delved into creating my own web pages, I felt like I had found my calling. Starting with simple HTML and CSS projects, I steadily grew and honed my skills.</p>
+{p9}</p>
 <p className={styles.p1}>
-Over time, I mastered new technologies and tools such as JavaScript, PHP, and libraries/frameworks that make development even more efficient. My projects span a wide range, from corporate websites to web applications and interactive interfaces.</p>
+{p10}</p>
 <p className={styles.p1}>
-What excites me most about being a web developer is the ability to transform ideas and concepts into reality, creating user-friendly and aesthetically appealing websites and applications. I am always seeking new challenges and skills, ready to join a team where I can contribute my creativity and professionalism to achieve common goals.</p>
+{p11}</p>
 <p className={styles.p1}>
-To learn more about my projects and skills, I invite you to explore my portfolio and resume. Thank you for your attention, and I look forward to opportunities for collaboration and growth in the field of web development.</p>
+{p12}</p>
 
 <div className={styles.flex}>
-<a className={styles.loadPort} href="/CV_IG.pdf" download>Download resume</a>
+<a className={styles.loadPort} href="/CV_IG.pdf" download>{buttonDownload}</a>
                   <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 <div id="contact" className={styles.section6}>
-  <ContactComponent/>
+  <ContactComponent title4={title4} name={name} email={email} phone={phone} message={message} buttonSubmit={buttonSubmit}/>
   <ThreeCanvas/>
   </div>
   <div className={styles.section7}>

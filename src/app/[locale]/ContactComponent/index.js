@@ -5,8 +5,7 @@ import axios from "axios";
 import styles from "./ConactComponent.module.css";
 import Image from "next/image";
 import Loader from "../Loader";
-function ContactComponent({contacTitle,contacttext1,contacttext2,
-    contacttext3,require,submit,name,email,phone,letter,error}) {
+function ContactComponent({title4, name, email, phone, message,buttonSubmit}) {
     const {
         register,
         handleSubmit,
@@ -79,14 +78,14 @@ function ContactComponent({contacTitle,contacttext1,contacttext2,
                             onSubmit={handleSubmit(onSubmit)}
                         >
                              <h3 className={styles.titleColums}>
-                             Get In Touch
+                            {title4}
             </h3>
                             <div className={styles.item}>
-                                <label className={styles.label} htmlFor="name">
+                                {/* <label className={styles.label} htmlFor="name">
                                   {name} <span>{(require)}</span>
-                                </label>
+                                </label> */}
                                 <input
-                                 placeholder="name"
+                                 placeholder={name} 
                                     type="text"
                                     id="name"
                                     {...register("name", { required: true })}
@@ -98,11 +97,11 @@ function ContactComponent({contacTitle,contacttext1,contacttext2,
                                 )}
                             </div>
                             <div className={styles.item}>
-                                <label className={styles.label} htmlFor="email">
+                                {/* <label className={styles.label} htmlFor="email">
                                    {email} <span>{(require)}</span>
-                                </label>
+                                </label> */}
                                 <input
-                                 placeholder="email"
+                                 placeholder={email} 
                                     type="email"
                                     id="email"
                                     {...register("email", { required: true })}
@@ -114,11 +113,11 @@ function ContactComponent({contacTitle,contacttext1,contacttext2,
                                 )}
                             </div>
                             <div className={styles.item}>
-                                <label className={styles.label} htmlFor="phone">
+                                {/* <label className={styles.label} htmlFor="phone">
                                   {phone}  <span>{(require)}</span>
-                                </label>
+                                </label> */}
                                 <input
-                                    placeholder="phone"
+                                    placeholder={phone}
                                     type="phone"
                                     id="phone"
                                     {...register("phone", { required: true })}
@@ -130,14 +129,14 @@ function ContactComponent({contacTitle,contacttext1,contacttext2,
                                 )}
                             </div>
                             <div className={styles.item}>
-                                <label
+                                {/* <label
                                     className={styles.label}
                                     htmlFor="letter"
                                 >
                                    {letter}<span>{(require)}</span>
-                                </label>
+                                </label> */}
                                 <textarea
-                                 placeholder="message"
+                                 placeholder={message}
                                     className={styles.textarea}
                                     rows="4"
                                     cols="50"
@@ -152,7 +151,7 @@ function ContactComponent({contacTitle,contacttext1,contacttext2,
                                 )}
                             </div>
                             <button className={styles.button} type="submit">
-                               Submit
+                              {buttonSubmit}
                             </button>
                         </form> 
                         </div>

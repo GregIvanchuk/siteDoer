@@ -7,14 +7,14 @@ const ThreeCanvas = () => {
   const camera = useRef(null);
   const renderer = useRef(null);
   const sphere = useRef(null);
-  const [canvasWidth, setCanvasWidth] = useState(400); // Стейт для ширини канвасу
-  const [canvasHeight, setCanvasHeight] = useState(400); // Стейт для висоти канвасу
+  const [canvasWidth, setCanvasWidth] = useState(330); // Стейт для ширини канвасу
+  const [canvasHeight, setCanvasHeight] = useState(330); // Стейт для висоти канвасу
 
   useEffect(() => {
     // Функція для оновлення розмірів канвасу
     const updateCanvasSize = () => {
-      const newWidth = window.innerWidth >= 600 ? 400 : 300;
-      const newHeight = window.innerWidth >= 600 ? 400 : 300;
+      const newWidth = window.innerWidth >= 600 ? 400 : 330;
+      const newHeight = window.innerWidth >= 600 ? 400 : 330;
       setCanvasWidth(newWidth);
       setCanvasHeight(newHeight);
       camera.current.aspect = newWidth / newHeight;
