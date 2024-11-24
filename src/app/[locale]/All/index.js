@@ -96,6 +96,24 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
             </tr>
         </thead>
         <tbody>
+          <tr>
+                <td className={styles.year}>2024</td>
+                <td className={styles.tdTitle}>Soul Garden</td>
+                <td  className={styles.country}>Ukraine</td>
+                <td className={styles.stek}>
+                  <span>
+                 Next.js
+                  </span>
+                  </td>
+                  <td className={styles.tDlink}> 
+                  <div className={styles.flex}>
+                  <a className={styles.link} href="https://www.soulgardenstudio.com/">
+                  <span className={styles.linkSpan}>https://www.soulgardenstudio.com</span>
+                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
+                  </a>
+                  </div>
+                  </td>
+            </tr>
             <tr>
                 <td className={styles.year} >2023</td>
                 <td className={styles.tdTitle}>Inkd by Mary Ann</td>
@@ -214,24 +232,7 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
                   </td>
             </tr>
 
-            <tr>
-                <td className={styles.year}>2023</td>
-                <td className={styles.tdTitle}>Morpho.jewerly</td>
-                <td  className={styles.country}>Ukraine</td>
-                <td className={styles.stek}>
-                  <span>
-                  React
-                  </span>
-                  </td>
-                  <td className={styles.tDlink}> 
-                  <div className={styles.flex}>
-                  <a className={styles.link} href="https://morpho.jewelry">
-                  <span className={styles.linkSpan}>https://morpho.jewelry</span>
-                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
-                  </a>
-                  </div>
-                  </td>
-            </tr>
+            
 
           
         </tbody>
