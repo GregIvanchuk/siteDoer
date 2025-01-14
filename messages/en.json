@@ -1,11 +1,11 @@
 {
   "Index": {
       "title" :"Welcome to siteDoer.pro!",
-      "p1" : "We are a professional web development studio offering a full range of services for creating, designing, and maintaining web projects of any complexity. Our team consists of experienced professionals with a creative approach to each task.",
-      "p2" : "In a world where the visual appearance and functionality of a website determine the success of your business or project, we offer an individual approach to each client. Whether you need to create a new website from scratch, redesign an existing one, or maintain and optimize an existing resource, we are ready to bring your ideas to life.",
-      "p3": "Our services cover all aspects of web development, including web design, programming, mobile device adaptation, SEO optimization, security testing, and much more. We use modern technologies and best market practices to provide you with a high-quality product that meets all modern standards.",
-      "p4": "Join our studio and let us make your web project visible and effective!",
-      "title2" :"Our studio uses cutting-edge technologies to build websites and web applications, primarily employing:",
+      "p1": "I am a professional web developer offering a full range of services for creating, developing, and maintaining web projects of any complexity. I work individually, ensuring a personalized approach for each client and project.",
+      "p2": "In a world where the visual appeal and functionality of a website determine the success of your business or project, I offer tailored solutions for each client. Whether you need to create a new website from scratch, redesign an existing one, or optimize and maintain your current website, I am ready to bring your ideas to life.",
+      "p3": "My services cover all aspects of web development, including web design, programming, mobile device adaptation, SEO optimization, security testing, and more. I use modern technologies and industry-leading practices to deliver high-quality results that meet all current standards.",
+      "p4": "Get in touch with me, and I will help make your web project visible, effective, and successful!",
+      "title2": "I use advanced technologies for creating websites and web applications, primarily including the following:",
        "p5" : "React: React is one of the most popular JavaScript libraries for developing user interfaces. It enables us to create dynamic and efficient web pages that respond to user actions without page reloads.",
        "p6" :"Next.js: Next.js is a popular React framework for building universal (with server-side rendering) web applications. It provides the capability to build high-performing and SEO-optimized applications, along with straightforward routing management and static page generation.",
        "p7": "MongoDB: MongoDB is a document-oriented NoSQL database used to store and manage data. This allows us to efficiently store and process structured and unstructured data for our web projects.",
@@ -16,32 +16,32 @@
        "link":"Link",
 
        "titleItem1":"Corporate Website",
-       "priceNewItem1":"from 200$",
-       "priceOldItem1":"from 300$",
+       "priceNewItem1":"from 300$",
+       "priceOldItem1":"from 500$",
        "descrItem1":"up to 5 pages",
 
        "titleItem2":"Landing Page",
-       "priceNewItem2":"from 150$",
-       "priceOldItem2":"from 200$",
+       "priceNewItem2":"from 250$",
+       "priceOldItem2":"from 300$",
        "descrItem2":"up to 7 sections",
 
        "titleItem3":"E-commerce Website",
-       "priceNewItem3":"from 400$",
-       "priceOldItem3":"from 700$",
+       "priceNewItem3":"from 700$",
+       "priceOldItem3":"from 1000$",
        "descrItem3":"basket, filters, payment, admin panel",
 
-       "titleItem4":"News Website",
-       "priceNewItem4":"from 400$",
-       "priceOldItem4":"from 550$",
-       "descrItem4":"admin panel",
-       "buttonBuy":"buy",
+       "titleItem4": "Multifunctional Platforms",
+       "priceNewItem4": "from $1000",
+       "priceOldItem4": "from $2000",
+       "descrItem4": "expanded functionality features",
+
        "buttonDownload":"Download resume",
 
        
-       "title3" :"About Us",
+       "title3" :"About Me",
        "p8" : "Мy journey began with a quest for a world where technology and creativity intersect, and where every line of code can create a new visual and functional reality. My name is Gregory, and I am a web developer.",
        "p9" : "From a young age, I was fascinated by computers and their capabilities. When I first delved into creating my own web pages, I felt like I had found my calling. Starting with simple HTML and CSS projects, I steadily grew and honed my skills.",
-       "p10" : "Over time, I mastered new technologies and tools such as JavaScript, PHP, and libraries/frameworks that make development even more efficient. My projects span a wide range, from corporate websites to web applications and interactive interfaces.",
+       "p10" : "Over time, I mastered new technologies and tools such as JavaScript, libraries/frameworks that make development even more efficient. My projects span a wide range, from corporate websites to web applications and interactive interfaces.",
        "p11" : "What excites me most about being a web developer is the ability to transform ideas and concepts into reality, creating user-friendly and aesthetically appealing websites and applications. I am always seeking new challenges and skills, ready to join a team where I can contribute my creativity and professionalism to achieve common goals.",
        "p12" : "To learn more about my projects and skills, I invite you to explore my portfolio and resume. Thank you for your attention, and I look forward to opportunities for collaboration and growth in the field of web development.",
 
@@ -52,11 +52,11 @@
        "message":"messsage",
        "buttonSubmit":"Submit",
 
-       "home": "home",
-       "projects": "projects",
-       "contact": "contact",
-       "prices": "prices",
-       "about": "about us"
+       "home": "Home",
+       "projects": "Projects",
+       "contact": "Contacts",
+       "prices": "Prices",
+       "about": "About us"
 
       }
   }

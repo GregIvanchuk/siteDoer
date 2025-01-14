@@ -96,6 +96,42 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
             </tr>
         </thead>
         <tbody>
+        <tr>
+                <td className={styles.year}>2024</td>
+                <td className={styles.tdTitle}>Comerase</td>
+                <td  className={styles.country}>Ukraine</td>
+                <td className={styles.stek}>
+                  <span>
+                  React.js
+                  </span>
+                  </td>
+                  <td className={styles.tDlink}> 
+                  <div className={styles.flex}>
+                  <a className={styles.link} href="https://comerase.com">
+                  <span className={styles.linkSpan}>https://comerase.com</span>
+                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
+                  </a>
+                  </div>
+                  </td>
+            </tr>
+            <tr>
+                <td className={styles.year}>2025</td>
+                <td className={styles.tdTitle}>Location</td>
+                <td  className={styles.country}>Romania</td>
+                <td className={styles.stek}>
+                  <span>
+                 Next.js
+                  </span>
+                  </td>
+                  <td className={styles.tDlink}> 
+                  <div className={styles.flex}>
+                  <a className={styles.link} href="https://location-bihg.vercel.app/">
+                  <span className={styles.linkSpan}>https://location-bihg.vercel.app</span>
+                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
+                  </a>
+                  </div>
+                  </td>
+            </tr>
           <tr>
                 <td className={styles.year}>2024</td>
                 <td className={styles.tdTitle}>Soul Garden</td>
@@ -115,25 +151,23 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
                   </td>
             </tr>
             <tr>
-                <td className={styles.year} >2023</td>
-                <td className={styles.tdTitle}>Inkd by Mary Ann</td>
-                <td  className={styles.country}>USA</td>
+                <td className={styles.year}>2022</td>
+                <td className={styles.tdTitle}>Rusni.net</td>
+                <td  className={styles.country}>Sweden</td>
                 <td className={styles.stek}>
                   <span>
-                 Next.js
+                  Next.js
                   </span>
                   </td>
-                <td className={styles.tDlink} >
+                  <td className={styles.tDlink}> 
                   <div className={styles.flex}>
-                   <a className={styles.link} href="https://inkd-zk4e.vercel.app">
-                   <span className={styles.linkSpan}>https://inkd.app/</span>
-                   <Image  width={25} height={25} alt='im1' src="/arr.png" />
-                   </a>
-               
-                </div>
-
-                </td>
-                </tr>
+                  <a className={styles.link} href="https://rusni.net">
+                  <span className={styles.linkSpan}>https://rusni.net</span>
+                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
+                  </a>
+                  </div>
+                  </td>
+            </tr>
                 <tr>
                 <td className={styles.year}>2024</td>
                 <td className={styles.tdTitle}>Vapno Group</td>
@@ -155,6 +189,27 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
 
             <tr>
                 <td className={styles.year} >2023</td>
+                <td className={styles.tdTitle}>Inkd by Mary Ann</td>
+                <td  className={styles.country}>USA</td>
+                <td className={styles.stek}>
+                  <span>
+                 Next.js
+                  </span>
+                  </td>
+                <td className={styles.tDlink} >
+                  <div className={styles.flex}>
+                   <a className={styles.link} href="https://inkd-zk4e.vercel.app">
+                   <span className={styles.linkSpan}>https://inkd.app/</span>
+                   <Image  width={25} height={25} alt='im1' src="/arr.png" />
+                   </a>
+               
+                </div>
+
+                </td>
+                </tr>
+
+            <tr>
+                <td className={styles.year} >2022</td>
                 <td className={styles.tdTitle}>Schlüsselfertiges Haus</td>
                 <td  className={styles.country}>Ukraine</td>
                 <td className={styles.stek}>
@@ -175,27 +230,7 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
             </tr>
 
             <tr>
-                <td className={styles.year}>2024</td>
-                <td className={styles.tdTitle}>siteDoer.pro</td>
-                <td  className={styles.country}>Ukraine</td>
-                <td className={styles.stek}>
-                  <span>
-                 React
-                  </span>
-                  </td>
-                  <td className={styles.tDlink}>
-                  <div className={styles.flex}>
-                    <a className={styles.link} href="https://site-doer.vercel.app">
-                    <span className={styles.linkSpan}>https://sitedoer.pro</span>
-                    <Image  width={25} height={25} alt='im1' src="/arr.png" />
-                    </a>
-                 
-                  </div>
-                  </td>
-            </tr>
-
-            <tr>
-                <td className={styles.year}>2022</td>
+                <td className={styles.year}>2021</td>
                 <td className={styles.tdTitle}>Sp Studio</td>
                 <td  className={styles.country}>Ukraine</td>
                 <td className={styles.stek}>
@@ -213,24 +248,7 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
                   </td>
             </tr>
 
-            <tr>
-                <td className={styles.year}>2022</td>
-                <td className={styles.tdTitle}>Rusni.net</td>
-                <td  className={styles.country}>Sweden</td>
-                <td className={styles.stek}>
-                  <span>
-                  Next.js
-                  </span>
-                  </td>
-                  <td className={styles.tDlink}> 
-                  <div className={styles.flex}>
-                  <a className={styles.link} href="https://rusni.net">
-                  <span className={styles.linkSpan}>https://rusni.net</span>
-                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
-                  </a>
-                  </div>
-                  </td>
-            </tr>
+            
 
             
 
