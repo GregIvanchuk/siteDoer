@@ -36,11 +36,6 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
     <main className={styles.main}>
       <Header home={home} projects={projects} contact={contact} prices={prices} about
 
-
-
-
-
-
 />
       <motion.div
       initial={{ opacity: 0, scale: 0 }} // Початкові стилі для зменшення та зникнення
@@ -96,7 +91,7 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
             </tr>
         </thead>
         <tbody>
-        <tr>
+        {/* <tr>
                 <td className={styles.year}>2024</td>
                 <td className={styles.tdTitle}>Comerase</td>
                 <td  className={styles.country}>Ukraine</td>
@@ -113,7 +108,7 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
                   </a>
                   </div>
                   </td>
-            </tr>
+            </tr> */}
             <tr>
                 <td className={styles.year}>2025</td>
                 <td className={styles.tdTitle}>Location</td>
