@@ -133,6 +133,27 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
                   </div>
                   </td>
             </tr>
+                   <tr>
+                <td className={styles.year}>2025</td>
+                <td className={styles.tdTitle}>Aim coach</td>
+                <td  className={styles.country}>Ukraine</td>
+                <td className={styles.stek}>
+                  <span>
+                 ReactNative
+                  </span>
+                 <span>
+                 PostgreSql
+                  </span>
+                  </td>
+                  <td className={styles.tDlink}> 
+                  <div className={styles.flex}>
+                  <a className={styles.link} href="https://aim.coach/">
+                  <span className={styles.linkSpan}>https://aim.coach/</span>
+                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
+                  </a>
+                  </div>
+                  </td>
+            </tr>
             <tr>
                 <td className={styles.year}>2025</td>
                 <td className={styles.tdTitle}>Location</td>
