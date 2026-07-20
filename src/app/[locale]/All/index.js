@@ -91,24 +91,48 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
             </tr>
         </thead>
         <tbody>
-        {/* <tr>
-                <td className={styles.year}>2024</td>
-                <td className={styles.tdTitle}>Comerase</td>
-                <td  className={styles.country}>Ukraine</td>
+                  <tr>
+                <td className={styles.year}>2026</td>
+                <td className={styles.tdTitle}>landStarkBau</td>
+                <td  className={styles.country}>Germany</td>
                 <td className={styles.stek}>
                   <span>
-                  React.js
+                 Next.js
+                  </span>
+                   <span>
+                 PostgreSql
                   </span>
                   </td>
                   <td className={styles.tDlink}> 
                   <div className={styles.flex}>
-                  <a className={styles.link} href="https://comerase.com">
-                  <span className={styles.linkSpan}>https://comerase.com</span>
+                  <a className={styles.link} href="https://www.landstarkbau.de/ua">
+                  <span className={styles.linkSpan}>https://www.soulgardenstudio.com</span>
                   <Image  width={25} height={25} alt='im1' src="/arr.png" />
                   </a>
                   </div>
                   </td>
-            </tr> */}
+            </tr>
+                  <tr>
+                <td className={styles.year}>2026</td>
+                <td className={styles.tdTitle}>BrushMaster</td>
+                <td  className={styles.country}>Ukraine</td>
+                <td className={styles.stek}>
+                  <span>
+                 Next.js
+                  </span>
+                 <span>
+                 PostgreSql
+                  </span>
+                  </td>
+                  <td className={styles.tDlink}> 
+                  <div className={styles.flex}>
+                  <a className={styles.link} href="https://www.brushmaster.com.ua/">
+                  <span className={styles.linkSpan}>https://www.brushmaster.com.ua/</span>
+                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
+                  </a>
+                  </div>
+                  </td>
+            </tr>
             <tr>
                 <td className={styles.year}>2025</td>
                 <td className={styles.tdTitle}>Location</td>
@@ -122,6 +146,24 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
                   <div className={styles.flex}>
                   <a className={styles.link} href="https://location-bihg.vercel.app/">
                   <span className={styles.linkSpan}>https://location-bihg.vercel.app</span>
+                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
+                  </a>
+                  </div>
+                  </td>
+            </tr>
+                 <tr>
+                <td className={styles.year}>2024</td>
+                <td className={styles.tdTitle}>Comerase</td>
+                <td  className={styles.country}>Ukraine</td>
+                <td className={styles.stek}>
+                  <span>
+                  React.js
+                  </span>
+                  </td>
+                  <td className={styles.tDlink}> 
+                  <div className={styles.flex}>
+                  <a className={styles.link} href="https://comerase.com">
+                  <span className={styles.linkSpan}>https://comerase.com</span>
                   <Image  width={25} height={25} alt='im1' src="/arr.png" />
                   </a>
                   </div>
