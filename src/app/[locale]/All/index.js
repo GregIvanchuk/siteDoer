@@ -411,9 +411,9 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
   </div>
   <div className={styles.section7}>
 
-<a className={styles.footerItem} href="https://www.instagram.com/overthinker__2.0?igsh=MW1rdG9rN3dvNzVqMw==" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a className={styles.footerItem} href="t.me/Ivanchuk_Gr">Telegram</a>
 <a className={styles.footerItem} href="tel:+380968336006">+380 96 83 36 006</a>
-<a className={styles.footerItem} href="mailto:gregiv99@gmail.com">Email</a>
+<a className={styles.footerItem} href="mailto:sitedoer99@gmail.com">Email</a>
 
   </div>
     </main>
