@@ -91,69 +91,78 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
             </tr>
         </thead>
         <tbody>
-                  <tr>
+           <tr>
+                <td className={styles.year}>2026</td>
+                <td className={styles.tdTitle}>VITRINA.AI</td>
+                <td  className={styles.country}>Ukraine</td>
+                <td className={styles.stek}>
+                  <span>
+                  Next.js
+                  </span>
+                  </td>
+                  <td className={styles.tDlink}> 
+                  <div className={styles.flex}>
+                  <a className={styles.link} href="https://vitrina-ai-phi.vercel.app/">
+                  <span className={styles.linkSpan}>https://vitrina.ai/</span>
+                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
+                  </a>
+                  </div>
+                  </td>
+            </tr> 
+            <tr>
+                <td className={styles.year}>2026</td>
+                <td className={styles.tdTitle}>ma4sale</td>
+                <td  className={styles.country}>Ukraine</td>
+                <td className={styles.stek}>
+                  <span>
+                  Next.js
+                  </span>
+                  </td>
+                  <td className={styles.tDlink}> 
+                  <div className={styles.flex}>
+                  <a className={styles.link} href="https://mac4sale.com.ua/">
+                  <span className={styles.linkSpan}>https://mac4sale.com.ua/</span>
+                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
+                  </a>
+                  </div>
+                  </td>
+            </tr> 
+             <tr>
                 <td className={styles.year}>2026</td>
                 <td className={styles.tdTitle}>landStarkBau</td>
                 <td  className={styles.country}>Germany</td>
                 <td className={styles.stek}>
                   <span>
-                 Next.js
-                  </span>
-                   <span>
-                 PostgreSql
+                  Next.js
                   </span>
                   </td>
                   <td className={styles.tDlink}> 
                   <div className={styles.flex}>
-                  <a className={styles.link} href="https://www.landstarkbau.de/ua">
-                  <span className={styles.linkSpan}>https://www.soulgardenstudio.com</span>
+                  <a className={styles.link} href="https://www.landstarkbau.de/">
+                  <span className={styles.linkSpan}>https://www.landstarkbau.de/</span>
                   <Image  width={25} height={25} alt='im1' src="/arr.png" />
                   </a>
                   </div>
                   </td>
-            </tr>
-                  <tr>
+            </tr> 
+             <tr>
                 <td className={styles.year}>2026</td>
                 <td className={styles.tdTitle}>BrushMaster</td>
                 <td  className={styles.country}>Ukraine</td>
                 <td className={styles.stek}>
                   <span>
-                 Next.js
-                  </span>
-                 <span>
-                 PostgreSql
+                  Next.js
                   </span>
                   </td>
                   <td className={styles.tDlink}> 
                   <div className={styles.flex}>
-                  <a className={styles.link} href="https://www.brushmaster.com.ua/">
-                  <span className={styles.linkSpan}>https://www.brushmaster.com.ua/</span>
+                  <a className={styles.link} href="https://brushmaster.com.ua">
+                  <span className={styles.linkSpan}>https://brushmaster.com.ua</span>
                   <Image  width={25} height={25} alt='im1' src="/arr.png" />
                   </a>
                   </div>
                   </td>
-            </tr>
-                   <tr>
-                <td className={styles.year}>2025</td>
-                <td className={styles.tdTitle}>Aim coach</td>
-                <td  className={styles.country}>Ukraine</td>
-                <td className={styles.stek}>
-                  <span>
-                 ReactNative
-                  </span>
-                 <span>
-                 PostgreSql
-                  </span>
-                  </td>
-                  <td className={styles.tDlink}> 
-                  <div className={styles.flex}>
-                  <a className={styles.link} href="https://aim.coach/">
-                  <span className={styles.linkSpan}>https://aim.coach/</span>
-                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
-                  </a>
-                  </div>
-                  </td>
-            </tr>
+            </tr> 
             <tr>
                 <td className={styles.year}>2025</td>
                 <td className={styles.tdTitle}>Location</td>
@@ -167,24 +176,6 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
                   <div className={styles.flex}>
                   <a className={styles.link} href="https://location-bihg.vercel.app/">
                   <span className={styles.linkSpan}>https://location-bihg.vercel.app</span>
-                  <Image  width={25} height={25} alt='im1' src="/arr.png" />
-                  </a>
-                  </div>
-                  </td>
-            </tr>
-                 <tr>
-                <td className={styles.year}>2024</td>
-                <td className={styles.tdTitle}>Comerase</td>
-                <td  className={styles.country}>Ukraine</td>
-                <td className={styles.stek}>
-                  <span>
-                  React.js
-                  </span>
-                  </td>
-                  <td className={styles.tDlink}> 
-                  <div className={styles.flex}>
-                  <a className={styles.link} href="https://comerase.com">
-                  <span className={styles.linkSpan}>https://comerase.com</span>
                   <Image  width={25} height={25} alt='im1' src="/arr.png" />
                   </a>
                   </div>
@@ -373,24 +364,58 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
 
 </div>
 </div>
-<div  id="about" className={styles.section5}>
-<h2 className={styles.title} >{title3}</h2>
+    <div id="about" className={styles.section5}>
+      {/* Декоративні фігури на фоні */}
+      <div className={styles.blob1} aria-hidden="true" />
+      <div className={styles.blob2} aria-hidden="true" />
+      <div className={styles.gridBg} aria-hidden="true" />
 
-<p className={styles.p1}>{p8}</p>
-<p className={styles.p1}>
-{p9}</p>
-<p className={styles.p1}>
-{p10}</p>
-<p className={styles.p1}>
-{p11}</p>
-<p className={styles.p1}>
-{p12}</p>
+      <div className={styles.inner}>
+        {/* Текстова частина */}
+        <div className={styles.textContent}>
+          <h2 className={styles.title}>{title3}</h2>
 
-<div className={styles.flex}>
-<a className={styles.loadPort} href="/CV_IG.pdf" download>{buttonDownload}</a>
-                  <Image  width={25} height={25} alt='im1' src="/arr2.png" />
-                  </div>
-</div>
+          <div className={styles.paragraphs}>
+            <p className={styles.p1}>{p8}</p>
+            <p className={styles.p1}>{p9}</p>
+            <p className={styles.p1}>{p10}</p>
+            <p className={styles.p1}>{p11}</p>
+            <p className={styles.p1}>{p12}</p>
+          </div>
+
+          <div className={styles.flex}>
+            <a className={styles.loadPort} href="/CV_IG.pdf" download>
+              {buttonDownload}
+              <Image
+                className={styles.arrIcon}
+                width={25}
+                height={25}
+                alt="download"
+                src="/arr2.png"
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* Фото праворуч */}
+        <div className={styles.photoWrapper}>
+          <div className={styles.photoFrame}>
+            <Image
+              src={'/ph56r.png'}
+              alt="My photo"
+              width={520}
+              height={640}
+              className={styles.photo}
+              priority
+            />
+          </div>
+
+          {/* Декоративні елементи навколо фото */}
+          <div className={styles.photoAccent1} aria-hidden="true" />
+          <div className={styles.photoAccent2} aria-hidden="true" />
+        </div>
+      </div>
+    </div>
 <div id="contact" className={styles.section6}>
   <ContactComponent title4={title4} name={name} email={email} phone={phone} message={message} buttonSubmit={buttonSubmit}/>
   <ThreeCanvas/>
