@@ -1,7 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rasa:ital,wght@0,500;1,500&family=Ysabeau+SC:wght@1..1000&display=swap');
 
-
+/* ============================================================
+   БАЗОВИЙ КОНТЕЙНЕР
+   ============================================================ */
 .main {
   color: white;
   margin: 0 auto;
@@ -11,62 +12,333 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-items: center;
   position: relative;
-}
-@media screen and (max-width: 1700px) {
-.main {
-  margin: 0 auto;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-items: center;
   border: 0.1rem #4c219e solid;
-  position: relative;
-}
-}
-
-.center {
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.prIm{
-  box-shadow: 0rem 1.5rem 3rem #4c219e;
-  /* border-radius: 100%; */
-}
-.section1, .section2,.section3, .section5 {
+/* ============================================================
+   СПІЛЬНІ СЕКЦІЇ
+   ============================================================ */
+.section1,
+.section2,
+.section3 {
   border-top: 0.1rem #4c219e solid;
   border-bottom: 0.1rem #4c219e solid;
-  padding:5em;
-  padding-left:3em;
-  padding-right: 3em;
+  padding: 5em 3em;
   font-size: 1.3rem;
-  padding-bottom: 5em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2.5rem;
   height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
-.section2{
+
+.section2 {
   border-top: none;
+  flex-direction: row-reverse;
 }
-.section3{
+
+.section3 {
   border-bottom: none;
+  flex-direction: row-reverse;
+  overflow-x: auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
-.section7{
+
+.section3::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.section3::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.section3::-webkit-scrollbar-thumb {
+  background-color: #4c219e;
+  border-radius: 10px;
+}
+
+/* ============================================================
+   SECTION 5 — "Про мене" з фото праворуч
+   ============================================================ */
+.section5 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: transparent;
   border-top: 0.1rem #4c219e solid;
   border-bottom: 0.1rem #4c219e solid;
-  padding:2em;
+  padding: 5em 3em;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3em;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.section5::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(124, 77, 255, 0.25), transparent 70%);
+  filter: blur(60px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section5::after {
+  content: '';
+  position: absolute;
+  bottom: -140px;
+  left: -100px;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(76, 33, 158, 0.35), transparent 70%);
+  filter: blur(70px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3em;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============ Текст ============ */
+.textContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 55%;
+  min-width: 0;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  color: #ffffff;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.p1 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #d0d0d8;
+}
+
+/* ============ Кнопка ============ */
+.flex {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.loadPort {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.8rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(135deg, #4c219e 0%, #7c4dff 100%);
+  border: 0.1rem solid #7c4dff;
+  box-shadow: 0 0 20px 2px rgba(76, 33, 158, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap;
+}
+
+.loadPort:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px 4px rgba(124, 77, 255, 0.8);
+}
+
+.flex img {
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+.flex:hover img {
+  transform: rotate(-45deg);
+}
+
+/* ============ Фото ============ */
+.photoWrapper {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.photoFrame {
+  position: relative;
+  padding: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4c219e 0%, #7c4dff 45%, #2196f3 100%);
+  box-shadow: 0rem 1.5rem 3rem #4c219e;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: fit-content;
+}
+
+.photoFrame:hover {
+  transform: translateY(-6px) rotate(-1deg);
+  box-shadow: 0rem 2rem 4rem #7c4dff;
+}
+
+.photo {
+  display: block;
+  width: 380px;
+  max-width: 100%;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  background: #1a1a2e;
+}
+
+.photoAccent1 {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 70px;
+  height: 70px;
+  border: 3px dashed rgba(124, 77, 255, 0.6);
+  border-radius: 50%;
+  animation: spin 18s linear infinite;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.photoAccent2 {
+  position: absolute;
+  bottom: -24px;
+  left: -24px;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #7c4dff, #4c219e);
+  border-radius: 16px;
+  transform: rotate(20deg);
+  opacity: 0.4;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ============ Фонові фігури ============ */
+.blob1,
+.blob2 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.blob1 {
+  top: -80px;
+  left: -80px;
+  width: 300px;
+  height: 300px;
+  background: #4c219e;
+}
+
+.blob2 {
+  bottom: -100px;
+  right: -60px;
+  width: 340px;
+  height: 340px;
+  background: #7c4dff;
+}
+
+.gridBg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(76, 33, 158, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(76, 33, 158, 0.15) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at 60% 40%, #000 0%, transparent 70%);
+  -webkit-mask-image: radial-gradient(circle at 60% 40%, #000 0%, transparent 70%);
+  pointer-events: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============================================================
+   SECTION 4
+   ============================================================ */
+.section4 {
+  padding: 3em 2em;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   SECTION 6
+   ============================================================ */
+.section6 {
+  padding: 5em 2em;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 6em;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   SECTION 7 (FOOTER)
+   ============================================================ */
+.section7 {
+  border-top: 0.1rem #4c219e solid;
+  border-bottom: 0.1rem #4c219e solid;
+  padding: 2em;
   font-size: 1.3rem;
   display: flex;
   flex-direction: row;
@@ -75,79 +347,44 @@
   height: 100%;
   width: 100%;
   flex-wrap: wrap;
-  
+  gap: 1em;
+  box-sizing: border-box;
 }
-.footerItem{
+
+.footerItem {
   font-size: 1rem;
   color: rgb(158, 158, 158);
+  word-break: break-word;
 }
-@media screen and (max-width: 420px) {
-  .footerItem{
-    font-size: 0.9rem;
-  }
-  .section7{
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-}
-@media screen and (max-width: 800px) {
-  .section1, .section2,.section3, .section5 {
-    padding-left:2em;
-    padding-right: 2em;
-    
-  }
-}
-@media screen and (max-width: 500px) {
-  .section1, .section2,.section3, .section5 {
-    padding-left:1.5em;
-    padding-right: 1.5em;
-    font-size: 1.1rem;
-  }
-}
-.section6{
-  padding:5em;
-  padding-left: 2em;
-  padding-right: 2em;
-  font-size: 1.3rem;
+
+/* ============================================================
+   HERO / CENTER
+   ============================================================ */
+.center {
+  z-index: 1;
   display: flex;
-  flex-direction: row;
-  gap: 6em;
-  align-items: center;
   justify-content: center;
-}
-@media screen and (max-width: 1050px) {
-  .section6 {
-    flex-direction: column-reverse;
-    gap: 4em;
-    padding-bottom: 1em;
-  }
-}
-@media screen and (max-width: 600px) {
-  .section6 {
-    padding-bottom: 0em;
-  }
-}
-.section4{
-  padding:3em;
-  padding-left: 2em;
-  padding-right: 2em;
-  font-size: 1.3rem;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
-.logo{
+
+.logo {
   position: absolute;
   z-index: 2;
   font-size: 6rem;
+  text-align: center;
+  padding: 0 1rem;
 }
+
 .center::before {
   background: linear-gradient(
     to bottom right,
     rgba(59, 0, 123, 0.459),
     rgba(128, 1, 255, 0.211),
-    #4c219e,
+    #4c219e
   );
   border-radius: 50%;
   width: 480px;
@@ -156,7 +393,7 @@
 }
 
 .center::after {
-  background:radial-gradient(#4c219e, rgb(34, 0, 147));
+  background: radial-gradient(#4c219e, rgb(34, 0, 147));
   width: 340px;
   height: 280px;
   z-index: -1;
@@ -171,134 +408,69 @@
   transform: translateZ(0);
 }
 
-
-@media screen and (max-width: 700px) {
-  .logo{
-    font-size: 4rem;
-  }
-  .center::after {
-    height: 200px;
-    width: 250px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .logo{
-    font-size: 3rem;
-  }
-  .center::after {
-    height: 150px;
-    width: 150px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .logo{
-    font-size: 2.5rem;
-  }
-}
-.section2,.section3{
-  flex-direction: row-reverse;
-}
-
-.title{
-  font-size: 2rem;
-  font-weight: 500;
-}
-.titleH3{
+/* ============================================================
+   ТИПОГРАФІКА
+   ============================================================ */
+.titleH3 {
   font-size: 1.8rem;
   font-weight: 500;
 }
 
-.text{
+.text {
   padding-left: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 2.5rem;
+  min-width: 0;
+}
 
-}
-@media screen and (max-width: 500px) {
-  .titleH3, .title{
-    font-size: 1.4rem;
-  }
-  .section1, .text{
-    gap: 1.8rem;
-  }
-  
-}
-.im{
+/* ============================================================
+   ЗОБРАЖЕННЯ (загальні)
+   ============================================================ */
+.im {
   border-radius: 100%;
   border: 2rem solid transparent;
   box-shadow: 0rem 1.5rem 3rem #4c219e;
-}
-@media screen and (max-width: 1200px) {
-  .im{
-    width: 350px;
-    height: 350px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .section2{
-   flex-direction: column;
-   gap: 3em;
-  }
-  .im{
-    margin: 0 auto;
-    width: 400px;
-    height: 400px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .section2{
-   flex-direction: column;
-   gap: 3em;
-  }
-  .im{
-    margin: 0 auto;
-    width: 280px;
-    height: 280px;
-  }
+  object-fit: cover;
+  object-position: top center;
+  max-width: 100%;
 }
 
+.prIm {
+  box-shadow: 0rem 1.5rem 3rem #4c219e;
+  max-width: 100%;
+}
 
-.list{
+/* ============================================================
+   СПИСКИ / ПОСЛУГИ — БЕЗ ЗМІН (як у попередній версії)
+   ============================================================ */
+.list {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 1em;
 }
-.services{
+
+.services {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 2rem;
 }
-.section3{
-  overflow-x: scroll;
-  width: 100%;
-}
-.section3::-webkit-scrollbar {
-  width: 0.5em;
-}
 
-.section3::-webkit-scrollbar-track {
-  background-color: transparent; /* Або виберіть колір, який підходить для вашого дизайну */
-}
-
-.section3::-webkit-scrollbar-thumb {
-  background-color: #ff000000; /* Колір "пальця" (відповідає за область, яку можна перетягнути) */
-}
-
-
-.serviceItemTop,.serviceItemBottom{
+.serviceItemTop,
+.serviceItemBottom {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
 }
-.serviceItem{
+
+.serviceItem {
   flex-direction: column;
   padding: 2rem;
   display: flex;
@@ -312,86 +484,72 @@
   width: 330px;
 }
 
-
-.serviceButton{
- color: #4c219e;
+.serviceButton {
+  color: #4c219e;
 }
-.serviceDescr{
+
+.serviceDescr {
   font-size: 1.1rem;
   color: rgb(164, 164, 164);
 }
-.servicePrice{
+
+.servicePrice {
   font-size: 2rem;
   color: rgb(255, 255, 255);
 }
-.servicePrices{
+
+.servicePrices {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 0.5rem;
 }
-.oldPrice{
+
+.oldPrice {
   font-size: 1.5rem;
   color: rgb(106, 106, 106);
   text-decoration: line-through;
 }
-@media screen and (max-width: 600px) {
-  .serviceDescr{
-    font-size: 1.1rem;
-    color: rgb(164, 164, 164);
-  }
-  .servicePrice{
-    font-size: 1.5rem;
-    color: rgb(255, 255, 255);
-  }
-  .servicePrices{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 0.5rem;
-  }
-  .oldPrice{
-    font-size: 1.3rem;
-  }
-}
 
+/* ============================================================
+   ТАБЛИЦЯ
+   ============================================================ */
 .myTable {
   width: 100%;
   border-collapse: collapse;
   border: none;
   margin-bottom: 2em;
+  table-layout: auto;
 }
-.myTable thead tr th{
-  white-space:nowrap;
 
+.myTable thead tr th {
+  white-space: nowrap;
 }
-.myTable th, .myTable td {
+
+.myTable th,
+.myTable td {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   padding-right: 4.5em;
-  text-align:left;
+  text-align: left;
 }
-@media screen and (max-width: 1250px) {
-  .myTable th, .myTable td {
-    padding-right: 2.5em;
-  }
-}
+
 .myTable tr {
   border-bottom: 1px #4c219e solid;
   padding: 2em;
 }
-.year{
+
+.year {
   font-size: 1.2rem;
   color: #9d9d9d;
 }
-.country{
+
+.country {
   font-size: 1.2rem;
   color: #9d9d9d;
 }
-.myTable th {
-}
+
 .stek {
   display: flex;
   align-items: flex-start;
@@ -399,147 +557,459 @@
   flex-wrap: wrap;
   gap: 0.5em;
 }
+
 .stek span {
   font-size: 1rem;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px;
   background-color: #4c219e;
   border-radius: 45%;
   color: white;
+  white-space: nowrap;
 }
-.link{
+
+.link {
   display: flex;
   font-size: 1rem;
   gap: 0.4rem;
   color: gray;
 }
-.flex{
-  display: flex;
-  gap: 0.4rem;
-  transition: transform 0.3s ease; 
+
+/* ============================================================
+   АДАПТИВНІСТЬ
+   ============================================================ */
+
+/* Великі екрани */
+@media screen and (max-width: 1400px) {
+  .section1,
+  .section2,
+  .section3,
+  .section5 {
+    padding: 4em 2.5em;
+  }
+  .section6 {
+    gap: 4em;
+    padding: 4em 2em;
+  }
 }
-.flex img{
-  transition: transform 0.3s ease;
+
+@media screen and (max-width: 1250px) {
+  .myTable th,
+  .myTable td {
+    padding-right: 2.5em;
+  }
+  .photo {
+    width: 340px;
+    height: 340px;
+  }
 }
-.flex:hover img {
-  transform: rotate(-45deg);
-  transition: transform 0.3s ease; /* Додаткова анімація для плавного переходу */
+
+/* Планшети горизонтально */
+@media screen and (max-width: 1200px) {
+  .im {
+    width: 350px;
+    height: 350px;
+  }
+  .photo {
+    width: 320px;
+    height: 320px;
+  }
+  .inner {
+    gap: 2em;
+  }
+  .section5 {
+    padding: 4em 2.5em;
+  }
 }
-.loadPort{
-  color: #4c219e;
-}
-@media screen and (max-width: 1070px) { 
-  .country{
+
+@media screen and (max-width: 1070px) {
+  .country,
+  .countryDescr {
     display: none;
   }
-  .countryDescr{
-    display: none;
-  }
-  .myTable th, .myTable td {
+  .myTable th,
+  .myTable td {
     padding-right: 3em;
   }
 }
-@media screen and (max-width: 970px) { 
-  .myTable th, .myTable td {
+
+/* Планшети вертикально — перехід section5 у колонку */
+@media screen and (max-width: 1050px) {
+  .section6 {
+    flex-direction: column-reverse;
+    gap: 4em;
+    padding-bottom: 1em;
+  }
+  .section5 {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+    padding: 3.5em 2em;
+  }
+  .inner {
+    flex-direction: column;
+    gap: 2.5em;
+    align-items: center;
+  }
+  .textContent {
+    max-width: 100%;
+    order: 2;
+    text-align: left;
+  }
+  .photoWrapper {
+    order: 1;
+  }
+  .photo {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .myTable th,
+  .myTable td {
     padding-right: 2em;
   }
 }
-@media screen and (max-width: 900px) { 
-  .myTable th, .myTable td {
+
+@media screen and (max-width: 900px) {
+  .myTable th,
+  .myTable td {
     padding-right: 4em;
   }
-  .linkSpan{
+  .linkSpan {
     display: none;
   }
-
+  .section1,
+  .section2,
+  .section3,
+  .section5 {
+    padding: 3.5em 2em;
+  }
+  .section2 {
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+  }
 }
-@media screen and (max-width: 850px) { 
-  .myTable th, .myTable td {
+
+@media screen and (max-width: 850px) {
+  .myTable th,
+  .myTable td {
     padding-right: 3em;
   }
-
 }
-@media screen and (max-width:770px) { 
-  .myTable th, .myTable td {
+
+/* Мобільні — великі */
+@media screen and (max-width: 800px) {
+  .section1,
+  .section2,
+  .section3,
+  .section5 {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    font-size: 1.15rem;
+  }
+  .photo {
+    width: 260px;
+    height: 260px;
+  }
+  .photoFrame {
+    padding: 6px;
+  }
+  .section6 {
+    padding: 3em 1.5em;
+    gap: 3em;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .myTable th,
+  .myTable td {
     padding-right: 2em;
   }
-
 }
-@media screen and (max-width:680px) { 
-  .myTable th, .myTable td {
+
+@media screen and (max-width: 700px) {
+  .logo {
+    font-size: 4rem;
+  }
+  .center::after {
+    height: 200px;
+    width: 250px;
+  }
+  .center::before {
+    width: 340px;
+    height: 260px;
+    margin-left: -280px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .myTable th,
+  .myTable td {
     padding-right: 1.5em;
   }
-
 }
-@media screen and (max-width:600px) { 
-  .myTable th, .myTable td {
+
+/* Мобільні — середні */
+@media screen and (max-width: 600px) {
+  .section6 {
+    padding-bottom: 0em;
+    padding: 2.5em 1.5em;
+    gap: 2.5em;
+  }
+  .section5 {
+    padding: 2.5em 1.5em;
+    font-size: 1.1rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .paragraphs {
+    gap: 1rem;
+  }
+  .photo {
+    width: 230px;
+    height: 230px;
+  }
+  .photoAccent1 {
+    width: 50px;
+    height: 50px;
+    top: -14px;
+    right: -14px;
+  }
+  .photoAccent2 {
+    width: 40px;
+    height: 40px;
+    bottom: -16px;
+    left: -16px;
+  }
+  .myTable th,
+  .myTable td {
     padding-right: 1em;
   }
-
+  .serviceDescr {
+    font-size: 1.1rem;
+    color: rgb(164, 164, 164);
+  }
+  .servicePrice {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+  }
+  .servicePrices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+  .oldPrice {
+    font-size: 1.3rem;
+  }
+  .section4 {
+    padding: 2.5em 1.5em;
+  }
+  .section7 {
+    padding: 1.5em;
+    gap: 1em;
+  }
 }
-@media screen and (max-width:550px) { 
-    .year{
-        display: none;
-      }
-      .yearDescr{
-        display: none;
-      }
-      .flex img{
-        margin-left: 0.5rem;
-      }
-  .myTable th, .myTable td {
+
+@media screen and (max-width: 550px) {
+  .year,
+  .yearDescr {
+    display: none;
+  }
+  .flex img {
+    margin-left: 0.5rem;
+  }
+  .myTable th,
+  .myTable td {
     padding-right: 0.5em;
   }
-
+  .section1,
+  .section2,
+  .section3 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
 }
-@media screen and (max-width:520px) { 
-  .myTable th, .myTable td {
+
+@media screen and (max-width: 520px) {
+  .myTable th,
+  .myTable td {
     padding-right: 1em;
   }
-  .tdTitle{
+  .tdTitle {
     font-size: 1rem;
   }
-  .year{
+  .year {
     font-size: 1rem;
   }
   .stek span {
-    padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 45%;
-  font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 45%;
+    font-size: 0.8rem;
   }
-  .myTable thead tr th{
+  .myTable thead tr th {
     font-size: 1rem;
-
   }
 }
-@media screen and (max-width:440px) { 
-  .myTable th, .myTable td {
+
+/* Мобільні — малі */
+@media screen and (max-width: 500px) {
+  .titleH3,
+  .title {
+    font-size: 1.4rem;
+  }
+  .section1,
+  .text {
+    gap: 1.8rem;
+  }
+  .section1,
+  .section2,
+  .section3 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    font-size: 1.1rem;
+  }
+  .section5 {
+    padding: 2em 1.2em;
+  }
+  .p1 {
+    font-size: 1rem;
+  }
+  .loadPort {
+    padding: 0.8rem 1.4rem;
+    font-size: 1rem;
+  }
+  .logo {
+    font-size: 3rem;
+  }
+  .center::after {
+    height: 150px;
+    width: 150px;
+  }
+  .center::before {
+    width: 260px;
+    height: 200px;
+    margin-left: -200px;
+  }
+  .section2 {
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+  }
+  .im {
+    margin: 0 auto;
+    width: 280px;
+    height: 280px;
+  }
+  .photo {
+    width: 200px;
+    height: 200px;
+  }
+  .photoFrame {
+    padding: 5px;
+  }
+  .photoAccent1 {
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    right: -10px;
+    border-width: 2px;
+  }
+  .photoAccent2 {
+    width: 32px;
+    height: 32px;
+    bottom: -12px;
+    left: -12px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .myTable th,
+  .myTable td {
     padding-right: 1em;
   }
-  .tdTitle{
+  .tdTitle {
     font-size: 0.9rem;
   }
-  .year{
+  .year {
     font-size: 0.9rem;
   }
   .stek span {
-    padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 45%;
-  font-size: 0.9rem;
-  }
-  .myTable thead tr th{
+    padding: 5px 10px;
+    border-radius: 45%;
     font-size: 0.9rem;
-
   }
-  .myTable tr{
+  .myTable thead tr th {
+    font-size: 0.9rem;
+  }
+  .myTable tr {
     padding-left: 0;
     padding-right: 0;
   }
+  .section5 {
+    padding: 1.8em 1em;
+  }
+  .photo {
+    width: 180px;
+    height: 180px;
+  }
+  .loadPort {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+  }
 }
 
+@media screen and (max-width: 420px) {
+  .footerItem {
+    font-size: 0.9rem;
+  }
+  .section7 {
+    padding-left: 1em;
+    padding-right: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .section1,
+  .section2,
+  .section3 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
 
+@media screen and (max-width: 360px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+  .photo {
+    width: 160px;
+    height: 160px;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .p1 {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+  .section5 {
+    padding: 1.5em 0.8em;
+  }
+  .loadPort {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+}
