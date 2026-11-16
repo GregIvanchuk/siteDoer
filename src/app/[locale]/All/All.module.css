@@ -187,7 +187,6 @@
 }
 
 .flex img {
-  filter: invert(1);
   transition: transform 0.3s ease;
 }
 
