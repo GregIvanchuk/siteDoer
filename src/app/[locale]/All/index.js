@@ -318,7 +318,6 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
  <p  className={styles.serviceDescr}>{descrItem1}</p>
  <div className={styles.flex}>
                   <Link className={styles.loadPort} href="#contact">{buttonBuy}</Link>
-                  <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 <div className={styles.serviceItem}>
@@ -330,7 +329,6 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
  <p  className={styles.serviceDescr}>{descrItem2}</p>
  <div className={styles.flex}>
                   <Link className={styles.loadPort} href="#contact">{buttonBuy}</Link>
-                  <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 </div>
@@ -344,7 +342,6 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
  <p  className={styles.serviceDescr}>{descrItem3}</p>
  <div className={styles.flex}>
                   <Link className={styles.loadPort} href="#contact">{buttonBuy}</Link>
-                  <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 
@@ -357,7 +354,6 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
  <p  className={styles.serviceDescr}>{descrItem4}</p>
  <div className={styles.flex}>
                   <Link className={styles.loadPort} href="#contact">{buttonBuy}</Link>
-                  <Image  width={25} height={25} alt='im1' src="/arr2.png" />
                   </div>
 </div>
 </div>
@@ -386,13 +382,6 @@ export default function All({title,p1,p2,p3,p4,title2,p5,p6,p7,year,country,proj
           <div className={styles.flex}>
             <a className={styles.loadPort} href="/CV_IG.pdf" download>
               {buttonDownload}
-              <Image
-                className={styles.arrIcon}
-                width={25}
-                height={25}
-                alt="download"
-                src="/arr2.png"
-              />
             </a>
           </div>
         </div>
